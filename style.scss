@@ -18,6 +18,7 @@ $first-color: rgb(23, 116, 116);
     position: fixed;
     margin-left: 10%;
     margin-right: 10%;
+    text-transform: capitalize;
     .cont {
         display: flex;
         justify-content: space-between;

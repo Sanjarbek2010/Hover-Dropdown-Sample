@@ -1,0 +1,132 @@
+body {
+  font-family: "Open Sans";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  width: 80%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid rgb(23, 116, 116);
+  position: fixed;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.nav .cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  margin: auto;
+}
+.nav .cont .logo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .cont .logo a {
+  text-decoration: none;
+  color: #000;
+}
+.nav .cont .logo a:hover {
+  color: rgb(23, 116, 116);
+}
+.nav .cont .links .mother-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .cont .links .mother-link .link {
+  list-style: none;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+  border: 1px solid rgb(23, 116, 116);
+  padding: 10px;
+  border-radius: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 1;
+}
+.nav .cont .links .mother-link .link .link-a {
+  text-decoration: none;
+}
+.nav .cont .links .mother-link .link .link-a p {
+  color: #000;
+}
+.nav .cont .links .mother-link .link .hover-drop {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  z-index: 3;
+  background: transparent;
+  left: 0;
+  top: 40px;
+  display: none;
+}
+.nav .cont .links .mother-link .link .drop-down {
+  position: absolute;
+  min-width: 200px;
+  top: 60px;
+  left: 0;
+  z-index: 10 !important;
+  box-shadow: 0 3px 10px 0 #9e9e9e;
+  z-index: 0;
+  opacity: 0;
+  display: none;
+  transition: all 0.3s;
+}
+.nav .cont .links .mother-link .link .drop-down ul {
+  list-style: none;
+  color: black;
+  margin: 0;
+}
+.nav .cont .links .mother-link .link .drop-down ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.nav .cont .links .mother-link .link .drop-down ul li a p {
+  padding: 10px;
+}
+.nav .cont .links .mother-link .link .drop-down ul li:hover {
+  background-color: #eee;
+}
+.nav .cont .links .mother-link .link:hover .drop-down {
+  opacity: 1;
+  display: block;
+}
+.nav .cont .links .mother-link .link:hover .hover-drop {
+  display: block;
+}
+.nav .cont .socials {
+  margin-right: 20px;
+}
+.nav .cont .socials a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 10px;
+}
+.nav .cont .socials a i {
+  padding: 10px;
+  border-radius: 50%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: rgb(23, 116, 116);
+  border: 1px solid rgb(23, 116, 116);
+  transition: 0.3s;
+}
+.nav .cont .socials a i:hover {
+  background-color: rgb(23, 116, 116);
+  color: white;
+}/*# sourceMappingURL=style.css.map */
